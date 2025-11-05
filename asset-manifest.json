@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/luxe-stay.final/static/css/main.60f4777f.css",
+    "main.js": "/luxe-stay.final/static/js/main.6b47f42b.js",
+    "index.html": "/luxe-stay.final/index.html",
+    "main.60f4777f.css.map": "/luxe-stay.final/static/css/main.60f4777f.css.map",
+    "main.6b47f42b.js.map": "/luxe-stay.final/static/js/main.6b47f42b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60f4777f.css",
+    "static/js/main.6b47f42b.js"
+  ]
+}
