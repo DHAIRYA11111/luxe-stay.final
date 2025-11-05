@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ----- TOP BAR ----- */
+.topbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: white;
+  padding: 18px 60px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  /* Fixed: Bold Black LuxeStay logo */
+  color: black;
+  -webkit-text-fill-color: black;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+/* Centered Nav */
+.nav-center {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-center a:hover, .nav-center a.active {
+  color: #c59d5f; /* Highlight active link with gold */
+}
+
+/* Right side buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.signin {
+  background: transparent;
+  border: 1px solid #333;
+}
+
+.signin:hover {
+  background: #333;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.register {
+  background: #c59d5f;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register:hover {
+  background: #b58d4f;
+}
+
+/* Basic Footer Styling */
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
 }

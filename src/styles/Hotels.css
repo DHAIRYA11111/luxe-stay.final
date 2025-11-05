@@ -1,0 +1,255 @@
+.hotels-page {
+  display: flex;
+  background-color: #f9fafb;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.filters {
+  width: 25%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+
+/* Filter Tab Styling */
+.city-header {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.filter-group-title {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.price-slider {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom Radio Button Styling */
+.amenities {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.amenities label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.amenities input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0 10px 0 0;
+  font: inherit;
+  color: currentColor;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  transition: border-color 0.2s;
+}
+
+.amenities input[type="radio"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+  background-color: #f25c05;
+}
+
+.amenities input[type="radio"]:checked {
+  border-color: #f25c05;
+}
+
+.amenities input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/* Sort By Styling */
+.sort-by-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+.sort-dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.sort-display {
+    width: 100%;
+    background: white;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reset-btn {
+  margin-top: 0;
+  width: 100%;
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* --- Hotel List Styles --- */
+
+.hotels-list {
+  width: 75%;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.hotel-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.hotel-card:hover {
+  transform: scale(1.02);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hotel-details h3 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.city-name {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.amenity-tags {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.amenity-tag {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 13px;
+}
+
+.booking-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.price-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.starting-from {
+    margin: 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.price {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.price strong {
+    font-weight: 700;
+}
+
+.per-night {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-left: 5px;
+}
+
+.view-details-btn {
+    background: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.view-details-btn:hover {
+    background: #f0f0f0;
+}
+
+.book-now-btn {
+    background: #c59d5f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.book-now-btn:hover {
+    background: #b58d4f;
+}
