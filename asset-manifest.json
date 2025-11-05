@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/luxe-stay.final/static/css/main.60f4777f.css",
-    "main.js": "/luxe-stay.final/static/js/main.6b47f42b.js",
+    "main.css": "/luxe-stay.final/static/css/main.46c114af.css",
+    "main.js": "/luxe-stay.final/static/js/main.8d86557f.js",
     "index.html": "/luxe-stay.final/index.html",
-    "main.60f4777f.css.map": "/luxe-stay.final/static/css/main.60f4777f.css.map",
-    "main.6b47f42b.js.map": "/luxe-stay.final/static/js/main.6b47f42b.js.map"
+    "main.46c114af.css.map": "/luxe-stay.final/static/css/main.46c114af.css.map",
+    "main.8d86557f.js.map": "/luxe-stay.final/static/js/main.8d86557f.js.map"
   },
   "entrypoints": [
-    "static/css/main.60f4777f.css",
-    "static/js/main.6b47f42b.js"
+    "static/css/main.46c114af.css",
+    "static/js/main.8d86557f.js"
   ]
 }
